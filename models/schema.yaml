@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: get_loaded_dates
+      description: "Dates in the loading table"
+      columns:
+          - name: loaded_date
+            description: "The dates in todays load"
+            tests:
+                - unique
+                - not_null
