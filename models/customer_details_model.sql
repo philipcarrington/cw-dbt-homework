@@ -1,3 +1,9 @@
+{{ 
+       config(
+              materialized='table'
+       ) 
+}}
+
 with base_data as (
         select row_number() over() as surrogate_key,
                hlcs.customer_id,

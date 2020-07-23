@@ -2,7 +2,7 @@ version: 2
 
 models:       
     - name: customer_details
-      description: "customer details over time"
+      description: "customer details over time - one statement"
       columns:
           - name: surrogate_key
             tests:
@@ -36,7 +36,7 @@ models:
             tests:                
                 - not_null
     - name: customer_details_incremental
-      description: "customer details over time"
+      description: "customer details over time - trying to use incremental"
       columns:
           - name: surrogate_key
             tests:
