@@ -8,4 +8,11 @@ models:
             description: "The dates in todays load"
             tests:
                 - unique
-                - not_null
+                - not_null    
+    - name: customer_details
+      description: ""
+
+sources:
+  - name: homework__loading
+    tables:      
+      - name: customer_stage
