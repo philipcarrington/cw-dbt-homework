@@ -1,16 +1,40 @@
 version: 2
 
-models:
-    - name: get_loaded_dates
-      description: "Dates in the loading table"
+models:       
+    - name: customer_details
+      description: "customer details over time"
       columns:
-          - name: loaded_date
-            description: "The dates in todays load"
+          - name: surrogate_key
             tests:
                 - unique
-                - not_null    
-    - name: customer_details
-      description: ""
+                - not_null
+          - name: customer_id
+            tests:                
+                - not_null
+          - name: first_name
+            tests:                
+                - not_null
+          - name: last_name
+            tests:                
+                - not_null
+          - name: county
+            tests:                
+                - not_null
+          - name: post_code
+            tests:                
+                - not_null
+          - name: valid_from
+            tests:                
+                - not_null
+          - name: valid_to
+            tests:                
+                - not_null 
+          - name: customer_id_change_no
+            tests:                
+                - not_null
+          - name: person_occ_no
+            tests:                
+                - not_null         
 
 sources:
   - name: homework__loading
