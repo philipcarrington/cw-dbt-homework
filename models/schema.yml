@@ -68,3 +68,4 @@ sources:
   - name: homework__loading
     tables:      
       - name: customer_stage
+      - name: customer_to_process
